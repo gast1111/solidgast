@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // wtf.academy
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.12;
 
 /**
  * @dev Proxy合约的所有调用都通过`delegatecall`操作码委托给另一个合约执行。后者被称为逻辑合约（Implementation）。
@@ -18,7 +18,7 @@ contract Proxy {
     }
 
     /**
-     * @dev 回调函数，调用`_delegate()`函数将本合约的调用委托给 `implementation` 合约
+     * @dev d，调用`_delegate()`函数将本合约的调用委托给 `implementation` 合约
      */
     fallback() external payable {
         _delegate();
