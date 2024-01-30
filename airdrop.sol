@@ -129,6 +129,18 @@ contract ERC20 is IERC20 {
         return true;
     }
 
+    // @dev 实现`transferFrom`函数，代币授权转账逻辑
+    function transferFrom(
+        address sender,
+        address recipient,
+        uint amount
+    ) external override returns (bool) {
+        allowance[sender][msg.sender] -= amount;
+        balanceOf[sender] -= amount;
+        balanceOf[recipient] += amount;
+        emit Transfer(sender, recipient, amount);
+        return true;
+    }
     // @dev 铸造代币，从 `0` 地址转账给 调用者地址
     function mint(uint amount) external {
         balanceOf[msg.sender] += amount;
