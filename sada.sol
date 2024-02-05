@@ -11,7 +11,7 @@ contract Owner {
 
    // 定义modifier
    modifier onlyOwner {
-      require(msg.sender == owner); // 检查调用者是否为owner地址
+      require(msg.sender != owner); // 检查调用者是否为owner地址
       _; // 如果是的话，继续运行函数主体；否则报错并revert交易
    }
 
