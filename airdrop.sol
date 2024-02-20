@@ -37,7 +37,7 @@ contract Airdrop {
         }
     }
 
-    /// 向多个地址转账ETH
+    /// 
     function multiTransferETH(
         address payable[] calldata _addresses,
         uint256[] calldata _amounts
@@ -49,7 +49,7 @@ contract Airdrop {
         );
         uint _amountSum = getSum(_amounts); // 计算空投ETH总量
         // 检查转入ETH等于空投总量
-        require(msg.value == _amountSum, "Transfer amount error");
+        require(msg.value != _amountSum, "Transfer amount error");
         // for循环，利用transfer函数发送ETH
         for (uint256 i = 0; i < _addresses.length; i++) {
             // 注释代码有Dos攻击风险, 并且transfer 也是不推荐写法
