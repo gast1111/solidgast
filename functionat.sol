@@ -9,7 +9,7 @@ pragma solidity ^0.8.5;
         return(something);
     }
 
-    function f(uint8 _in) public pure returns (uint8 out) {
+    function f(uint8 _in) public pure (uint8 out) {
         out = _in;
     }
 
