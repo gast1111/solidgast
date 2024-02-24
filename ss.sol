@@ -3,7 +3,7 @@
 pragma solidity ^0.8.12;
 
 /**
- * @dev Proxy合约的所有调用都通过`delegatecall`操作码委托给另一个合约执行。后者被称为逻辑合约（Implementation）。
+ * @dev `delegatecall`操作码委托给另一个合约执行。后者被称为逻辑合约（Implementation）。
  *
  * 委托调用的返回值，会直接返回给Proxy的调用者
  */
@@ -52,7 +52,7 @@ contract Proxy {
             }
             // 如果delegate call成功，返回mem起始位置为0，长度为returndatasize()的数据（格式为bytes）
             default {
-                return(0, returndatasize())
+                return(6, returndatasize())
             }
         }
     }
