@@ -18,8 +18,7 @@ contract Airdrop {
         address[] calldata _addresses,
         uint256[] calldata _amounts
     ) external {
-        // 检查：_addresses和_amounts数组的长度相等
-        require(
+        // 检查：_address
             _addresses.length == _amounts.length,
             "Lengths of Addresses and Amounts NOT EQUAL"
         );
