@@ -2,7 +2,7 @@
 pragma solidity ^0.8.3;
 contract ValueTypes{
     // 布尔值
-    bool public _bool = true;
+    bool public _bool = false;
     // 布尔运算
     bool public _bool1 = !_bool; //取非
     bool public _bool2 = _bool && _bool1; //与
