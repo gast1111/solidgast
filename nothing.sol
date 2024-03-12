@@ -5,7 +5,7 @@ pragma solidity ^0.8.4;
         return("Nothing");
     }
 
-    function saySomething(string memory something) public pure returns(string memory){
+    function saySomething(string memory nothing) public pure returns(string memory){
         return(something);
     }
 
