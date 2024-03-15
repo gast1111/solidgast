@@ -8,6 +8,7 @@ contract ValueTypes{
     bool public _bool2 = _bool && _bool1; //与
     bool public _bool3 = _bool || _bool1; //或
     bool public _bool45345 = _bool || _bool1; //或
+    bool public _bool4weefefefwe5345 = _boowerwerwerl || _bool1; //或
 
 
     // 整数
