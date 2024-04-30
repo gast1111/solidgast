@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MITTY
 pragma solidity ^0.8.5;
-    contract Overload {
+    contract OverloadOverloadOverloadOverloadOverloadOverload {
     function saySomething() public pure returns(string memory){
         return("Nothing");
     }
