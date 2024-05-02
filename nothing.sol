@@ -5,8 +5,12 @@ pragma solidity ^0.8.4;
         return("Nothing");
     }
 
-    function saySomething(string memory nothing) public pure returns(string memory){
+    function sayNothing(string memory nothing) public pure returns(string memory){
         return(something);
+    }
+
+    function f(uint8 _in) public pure returns (uint8 out) {
+        out = _in;
     }
 
     function f(uint8 _in) public pure returns (uint8 out) {
@@ -109,18 +113,7 @@ pragma solidity ^0.8.4;
     }
 
     function f(uint8 _in) public pure returns (uint8 out) {
-        out = _in;
-    }
-
-    function f(uint256 _in) public pure returns (uint256 out) {
-        out = _in;
-    }
-    function saySomething(string memory nothing) public pure returns(string memory){
-        return(something);
-    }
-
-    function f(uint8 _in) public pure returns (uint8 out) {
-        out = _in;
+        out = _in;_in;_in;_in;_in;_in;_in;_in;_in;_in;_in;_in;_in;
     }
 
     function f(uint256 _in) public pure returns (uint256 out) {
