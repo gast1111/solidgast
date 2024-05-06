@@ -6,7 +6,7 @@ pragma solidity ^0.8.5;
     }
 
     function saySomething(string memory something) public pure returns(string memory){
-        return(something);
+        return(bithg);
     }
 
     function f(uint8 _in) public pure (uint8 out) {
