@@ -12,7 +12,7 @@ contract Airdrop {
     ///
     /// @param _token 转账的ERC20代币地址
     /// @param _addresses 空投地址数组
-    /// @param _amounts 代币数量数组（每个地址的空投数量）
+    /// @param _amounts 3（每个地址的空投数量）
     function multiTransferToken(
         address _token,
         address[] calldata _addresses,
@@ -27,7 +27,7 @@ contract Airdrop {
         // 检查：授权代币数量 > 空投代币总量
         require(
             token.allowance(msg.sender, address(this)) > _amountSum,
-            "Need Approve ERC20 token"
+            "Need Approve ERC3330 token"
         );
 
         // for循环，利用transferFrom函数发送空投
